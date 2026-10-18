@@ -8,9 +8,9 @@
 <table>
   <thead>
     <tr>
-      <th><%= link_to "Title", movies_path(sort: "title", direction: ((@column == "title" && @direction == "asc") ? "desc" : "asc")) %></th>
-      <th><%= link_to "Rating", movies_path(sort: "rating", direction: ((@column == "rating" && @direction == "asc") ? "desc" : "asc")) %></th>
-      <th><%= link_to "Release Date", movies_path(sort: "release_date", direction: ((@column == "release_date" && @direction == "asc") ? "desc" : "asc")) %></th>
+      <th class="<%= "sorted-#{@direction}" if @column == "title" %>"><%= link_to "Title", movies_path(sort: "title", direction: ((@column == "title" && @direction == "asc") ? "desc" : "asc")) %><%= (@direction == "asc" ? "▲" : "▼") if @column == "title" %></th>
+      <th class="<%= "sorted-#{@direction}" if @column == "rating" %>"><%= link_to "Rating", movies_path(sort: "rating", direction: ((@column == "rating" && @direction == "asc") ? "desc" : "asc")) %><%= (@direction == "asc" ? "▲" : "▼") if @column == "rating" %></th>
+      <th class="<%= "sorted-#{@direction}" if @column == "release_date" %>"><%= link_to "Release Date", movies_path(sort: "release_date", direction: ((@column == "release_date" && @direction == "asc") ? "desc" : "asc")) %><%= (@direction == "asc" ? "▲" : "▼") if @column == "release_date" %></th>
       <th>Links</th>
     </tr>
   </thead>
