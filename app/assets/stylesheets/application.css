@@ -8,5 +8,71 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
-th.sorted-asc  { background-color: lightgreen; }
-th.sorted-desc { background-color: lightblue; }
+
+/* ===== Base: whole-page defaults ===== */
+body {
+    background-color: #ffffff;
+    color: #2d3748;
+    font-family: system-ui, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+h1 {
+    color: #8b5a2b;
+    border-bottom: 2px solid #e9dcc3;
+}
+a {
+    color: #6b8e23;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Notice banner ===== */
+.notice {
+    background-color: #eef5e0;
+    color: #6b8e23;
+    border-left: 4px solid #6b8e23;
+    padding: 8px 12px;
+}
+.notice:empty {
+    display: none;
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+thead th {
+    background-color: #e9dcc3;
+}
+tbody tr:nth-child(even) {
+    background-color: #fdf6e3;
+}
+
+/* ===== Sorted column highlight ===== */
+th.sorted-asc  { background-color: #c8e6a0; }
+th.sorted-desc { background-color: #f3d39b; }
+
+/* ===== Forms ===== */
+input, textarea {
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+}
+button, input[type="submit"] {
+    background-color: #6b8e23;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    cursor: pointer;
+}
