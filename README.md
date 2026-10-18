@@ -1,24 +1,7 @@
-# README
+# RottenPotatoes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CSCE 606 Programming Assignment 2 (Hello Rails)
 
-Things you may want to cover:
+Deployed app: https://jatkins-rottenpotatoes-870e14725c1d.herokuapp.com/movies
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+AI disclosure: Used Claude for setup guidance and troubleshooting.
