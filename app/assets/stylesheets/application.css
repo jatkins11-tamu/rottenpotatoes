@@ -87,3 +87,17 @@ button, input[type="submit"] {
     padding: 6px 14px;
     cursor: pointer;
 }
+
+/* ===== Details display ===== */
+.movie-details div {
+    margin-bottom: 12px;
+}
+.actions {
+    margin-top: 20px;
+}
+.button_to {
+    margin-top: 12px;
+}
+.button_to button {
+    background-color: #c53030;
+}
